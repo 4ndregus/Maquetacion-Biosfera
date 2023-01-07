@@ -11,7 +11,7 @@ $conexion = new Conexion1();
   </div>
   <ul id="social-sidebar">
     <li>
-      <a href="#">
+      <a id="btnIcon" onclick="showPopup(popup)">
         <i class="fa-solid fa-user"></i>
         <span>Usuario</span>
       </a>
@@ -47,6 +47,46 @@ $conexion = new Conexion1();
     </ul>
     
   </section>
+
+  <div class="contenedor">
+	<div class="overlay" id="overlay">
+    <div class="popup" id="popup">
+      <h3>Inicio de Sesión</h3>
+      <form action="" class="formulario">
+        <fieldset>
+          <div class="contenedor-inputs">
+            <div class="campo">
+              <label>Usuario</label>
+              <input class="input-text" type="text">
+            </div>
+
+            <div class="campo">
+              <label>Contraseña</label>
+              <input class="input-text" type="password">
+            </div>
+          </div> <!-- .contenedor-inputs -->
+
+          <a class="enlace" href="#">¿Olvidaste tu contraseña?</a>
+          <input type="submit" class="btn-submit" value="ingresar">
+          <a class="enlace" href="#">¿No tienes cuenta?, Regístrate aquí</a>
+        </fieldset>
+      </form>
+  </div>
+
+  <div class="overlay">
+    <div class="popup" id="popup2">
+			<h3>Datos Actuales</h3>
+      <ul class="list-icons">
+          <li><i class="fa-solid fa-temperature-three-quarters"></i>  100 °C</li>
+          <li><i class="fa-solid fa-cloud-rain"></i>      %</li>
+          <li><i class="fa-solid fa-droplet"></i>      %</li>
+          <li><i class="fa-solid fa-wind"></i>      Km/h</li>
+          <li><i class="fa-solid fa-arrow-right"></i>      NNE</li>
+      </ul>		
+    </div>
+  </div>
+
+</div>
 
 </div>
 <div id="mapa_div">
